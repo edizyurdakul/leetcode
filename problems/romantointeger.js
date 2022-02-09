@@ -72,3 +72,26 @@ var romanToInt = function (s) {
   });
   return num;
 };
+
+// Another solution I found
+// /**
+//  * @param {string} s
+//  * @return {number}
+//  */
+//  var romanToInt = function (s) {
+//     let map = { I: 1, V: 5, X: 10, L: 50, C: 100, D: 500, M: 1000 }
+
+//     let res = 0
+//     for (let i = 0; i < s.length; i++) {
+//       let currValue = map[s[i]]
+//       let nextValue = map[s[i + 1]]
+
+//       if (nextValue > currValue) {
+//         res += nextValue - currValue
+//         i++
+//       } else {
+//         res += currValue
+//       }
+//     }
+//     return res
+//   }
